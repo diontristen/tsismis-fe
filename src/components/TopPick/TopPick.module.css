@@ -1,0 +1,40 @@
+.topPick {
+    border-radius: 1rem;
+    background-color: var(--mantine-color-sub-body);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 1rem;
+}
+
+.topPickItem {
+    padding: 0.5rem 0;
+}
+
+.topPickItemRank {
+    font-size: 0.75rem;
+}
+
+.topPickItemTag {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--mantine-color-primary-5);
+}
+
+.topPickItemCount {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: var(--mantine-color-dark-2);
+}
+
+.title {
+    font-weight: 600;
+}
+
+.header {
+    border-bottom: 1px solid var(--mantine-color-body-border);
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    padding: 0.5rem 1rem;
+}

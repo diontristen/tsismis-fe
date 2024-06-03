@@ -1,0 +1,31 @@
+.container {
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+}
+
+.image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--mantine-color-body-border);
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.content {
+    flex-direction: column;
+}
+
+.tsismis {
+    font-size: 0.75rem;
+    color: var(--mantine-color-dark-0);
+}
+
+.dateTime {
+    font-size: 0.75rem;
+    color: var(--mantine-color-dark-0);
+}

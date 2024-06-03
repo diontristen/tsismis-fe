@@ -1,0 +1,55 @@
+.latestTsismosa {
+    border-radius: 1rem;
+    background-color: var(--mantine-color-sub-body);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 1rem;
+}
+
+.latestTsismosaItem {
+    align-items: center;
+    padding: 0.5rem 0rem;
+    gap: 0.5rem;
+}
+
+.latestTsismosaContent {
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+    &:hover > * {
+        color: var(--mantine-color-primary-5);
+    }
+}
+
+.lastestTsismosaName {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.latestTsimosaUsername {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: var(--mantine-color-dark-1)
+}
+
+.image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--mantine-color-body-border);
+}
+
+
+.title {
+    font-weight: 600;
+}
+
+.header {
+    border-bottom: 1px solid var(--mantine-color-body-border);
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    padding: 0.5rem 1rem;
+}

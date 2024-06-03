@@ -1,0 +1,82 @@
+.banner {
+    position: relative;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+}
+
+.header {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+
+.image {
+    position: absolute;
+    left: 0.5rem;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border: 5px solid var(--mantine-color-body);
+}
+
+.content {
+    padding: 1rem;
+}
+
+.name {
+    line-height: 1rem;
+}
+
+.username {
+    color: var(--mantine-color-primary-5);
+}
+
+.desc {
+    word-break: break-all;
+}
+
+.joined {
+    gap: 0.5rem;
+    & > * {
+        color: var(--mantine-color-dark-0);
+    }
+}
+
+.dataContainer {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.data {
+    gap: 0.5rem;
+    & > * {
+        color: var(--mantine-color-white-0);
+    }
+}
+
+.value {
+    font-weight: 600;
+}
+
+.pill {
+    background-color: var(--mantine-color-primary-5);
+    color: var(--mantine-color-white-0);
+}
+
+
+.modalInner {
+    left: 0;
+}
+
+
+.alert {
+    margin-bottom: 1rem;
+    background-color: var(--mantine-color-dark-3) !important;
+}
+
+.success {
+    background-color: var(--mantine-color-primary-5);
+    margin: 1rem 0;
+}

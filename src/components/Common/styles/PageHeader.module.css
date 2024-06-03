@@ -1,0 +1,9 @@
+.container {
+    padding: 1rem;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+     }
+}

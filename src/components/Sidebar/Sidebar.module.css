@@ -1,0 +1,73 @@
+.container {
+    flex-direction: column;
+    padding: 1rem;
+    flex: 1;
+    height: 100%;
+}
+
+.logo {
+    width: 2.5rem;
+}
+
+.menu {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex: 1;
+}
+
+.menuItem {
+    gap: 1rem;
+    cursor: pointer;
+
+    &[data-active='true']>* {
+        color: var(--mantine-color-primary-5);
+        font-weight: 600;
+    }
+
+    &:hover>* {
+        color: var(--mantine-color-primary-5);
+        font-weight: 600;
+    }
+}
+
+.menuItemIcon {
+    color: var(--text-color);
+}
+
+.userDropdown {
+    width: 10rem !important;
+}
+
+.user {
+    margin-top: 1rem;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover *{
+        color: var(--mantine-color-primary-5);
+    }
+}
+
+.userIcon {
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--mantine-color-body-border);
+}
+
+.userDetails {
+    flex: 1;
+    flex-direction: column;
+    gap: 0;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.username {
+    font-size: 0.875rem;
+    margin-top: -0.3rem;
+}

@@ -1,0 +1,87 @@
+.container {
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+    position: relative;
+}
+
+.image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--mantine-color-body-border);
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.content {
+    flex-direction: column;
+}
+
+.header {
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap: 0;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+
+.name {
+    font-weight: 600;
+}
+
+.dateTime {
+    color: var(--mantine-color-dark-1)
+}
+
+.hashtagContainer {
+    column-gap: 0.5rem;
+    row-gap: 0;
+    flex-wrap: wrap;
+}
+
+.action {
+    gap: 1rem;
+}
+
+.tickContainer {
+    gap: 0.5rem
+}
+
+.unTick {
+    cursor: pointer;
+    transition: all 100ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.tick {
+    cursor: pointer;
+    fill: var(--mantine-color-primary-5);
+    transition: all 100ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    & > * {
+        color: var(--mantine-color-dark-2);
+    }
+}

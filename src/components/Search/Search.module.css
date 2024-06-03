@@ -1,0 +1,14 @@
+.searchBar {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input {
+    flex: 1
+}
+
+.cta {
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: var(--mantine-color-primary-5);
+}

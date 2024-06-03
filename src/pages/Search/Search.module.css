@@ -1,0 +1,12 @@
+.search {
+    padding: 1rem;
+}
+
+.tabs {
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.tabsTab {
+    flex: 1;
+}

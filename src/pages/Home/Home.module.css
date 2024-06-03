@@ -1,0 +1,13 @@
+.create {
+    padding: 1rem;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+
+    @media (max-width: $mantine-breakpoint-md) {
+       display: none;
+    }
+}
+
+.tsismisList {
+    flex-direction: column;
+    flex: 1;
+}

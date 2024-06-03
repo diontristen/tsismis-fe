@@ -1,0 +1,58 @@
+.textInput {
+    color: var(--text-input-color);
+    background-color: transparent;
+
+    &:focus,
+    &:focus-within {
+        border-color: var(--text-input-bd-focus);
+    }
+}
+
+.tagsPill {
+    background-color: var(--mantine-color-primary-5);
+    color: var(--mantine-color-white-0);
+}
+
+.buttonRoot {
+    background-color: var(--mantine-color-primary-5);
+    transition: all 100ms ease;
+
+    &:hover {
+        background-color: var(--mantine-color-primary-3);
+    }
+}
+
+.anchor {
+    color: var(--anchor-color);
+    transition: all 100ms ease;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--mantine-color-primary-3);
+    }
+}
+
+.actionIcon {
+    &:hover {
+        border-color: var(--mantine-color-primary-5);
+    }
+}
+
+.alert {
+    background-color: var(--mantine-color-primary-5);
+}
+
+.alertMessage {
+    color: var(--mantine-color-dark-5);
+    text-align: left;
+}
+
+.drawerInner {
+    left: 0
+}
+
+.loader {
+    &:after {
+        border-color: var(--mantine-color-primary-5) var(--mantine-color-primary-5) var(--mantine-color-primary-5) transparent;
+    }
+}

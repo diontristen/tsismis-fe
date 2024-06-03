@@ -1,0 +1,45 @@
+:root {
+  color-scheme: var(--mantine-color-scheme);
+  --text-color: var(--mantine-color-white-0);
+  --text-input-color: var(--mantine-color-white-0);
+  --anchor-color: var(--mantine-color-primary-5);
+  --text-input-bd-focus: var(--mantine-color-primary-5);
+  --mantine-primary-color-filled-hover: var(--mantine-color-primary-5);
+  --mantine-color-body: var(--mantine-color-dark-5);
+  --mantine-color-sub-body: var(--mantine-color-dark-5);
+  --mantine-color-body-border: var(--mantine-color-dark-4);
+}
+
+:root[data-mantine-color-scheme=light] {
+  --mantine-color-body: var(--mantine-color-white-2);
+  --mantine-color-sub-body: var(--mantine-color-white-1);
+  --mantine-color-body-border: var(--mantine-color-white-6);
+  --text-color: var(--mantine-color-dark-5);
+  --text-input-color: var(--mantine-color-dark-5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  max-width: var(--mantine-breakpoint-xl);
+}
