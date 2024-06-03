@@ -32,7 +32,6 @@
         flex: 1;
     }
     @media (max-width: $mantine-breakpoint-md) {
-        padding-top: 74px;
      }
 }
 
