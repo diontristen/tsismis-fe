@@ -49,8 +49,8 @@ const tsismisScehma = z.object({
 
 const TsismisInput = ({ initial, type }: Props) => {
     const { user } = useUser();
-    const { postTsismis } = usePostTsismis();
-    const { updateTsismis } = useUpdateTsimis();
+    const { loading, postTsismis } = usePostTsismis();
+    const { loading: updateLoading,  updateTsismis } = useUpdateTsimis();
     const [charCount, setCharCount] = useState<number>(initial?.message?.length ?? 0);
     const { createTsismisModalOpened, editTsismisModalOpened, toggleEditTsismisModal, toggleCreateTsismisModal } = useContextStore();
 
@@ -156,6 +156,8 @@ const TsismisInput = ({ initial, type }: Props) => {
             </Flex>
             <Button className={classes.cta}
                 type='submit'
+                loading={loading || updateLoading}
+                disabled={loading || updateLoading}
             >
                 {type === 'create' ? 'New Tsismis' : 'Update Tsismis'}
             </Button>
