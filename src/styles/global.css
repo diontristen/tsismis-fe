@@ -39,6 +39,7 @@ body {
   height: 100%;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+  min-height: -webkit-fill-available;
 }
 
 body {

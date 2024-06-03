@@ -1,4 +1,4 @@
-import { Text, Image, Burger, Flex } from '@mantine/core';
+import { Text, Image, Burger, Flex, Anchor } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from '@/components/Sidebar/MobileSidebar.module.css';
 import MobileSidebarDrawer from './MobileSidebarDrawer';
@@ -7,16 +7,18 @@ const MobileSidebar = () => {
     return (
         <>
             <Flex className={classes.container}>
-                <Flex className={classes.company}>
-                    <Image
-                        src='/tsismis.svg'
-                        alt='Company Logo'
-                        className={classes.logo}
-                    />
-                    <Text className={classes.name}>
-                        <Text component='span' inherit className={classes.special}>T</Text>
-                        sismis</Text>
-                </Flex>
+                <Anchor href='/'>
+                    <Flex className={classes.company}>
+                        <Image
+                            src='/tsismis.svg'
+                            alt='Company Logo'
+                            className={classes.logo}
+                        />
+                        <Text className={classes.name}>
+                            <Text component='span' inherit className={classes.special}>T</Text>
+                            sismis</Text>
+                    </Flex>
+                </Anchor>
                 <Burger
                     size="sm"
                     opened={opened}
