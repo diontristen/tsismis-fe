@@ -21,7 +21,7 @@ const User = () => {
 
     return (
         <Menu
-            position='right-end'
+            position='top-end'
             classNames={{
                 dropdown: classes.userDropdown
             }}
