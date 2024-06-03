@@ -94,4 +94,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ---
 
-**Note:** This project is connected with a backend repository hosted at [https://github.com/diontristen/tsismis-be](https://github.com/diontristen/tsismis-fe).
+**Note:** This project is connected with a backend repository hosted at [https://github.com/diontristen/tsismis-be](https://github.com/diontristen/tsismis-be).
