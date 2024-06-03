@@ -15,10 +15,9 @@ import Settings from '@/components/Tsismis/Settings';
 interface Props {
     data: ITsismis;
     own: boolean;
-    index: number;
 }
 
-const Tsismis = ({ data, own, index }: Props) => {
+const Tsismis = ({ data, own }: Props) => {
     const userLink = own ? PROFILE_ROUTE : `${PROFILE_ROUTE}/${data.user.username}`
 
     return (
@@ -32,7 +31,7 @@ const Tsismis = ({ data, own, index }: Props) => {
             <Flex className={classes.content}>
                 <Flex className={classes.header}>
                     <Text className={classes.name}>{data.user.displayName}</Text>
-                    <Anchor href={userLink}>@{data.user.username} #{index}</Anchor>
+                    <Anchor href={userLink}>@{data.user.username}</Anchor>
                     <Text className={classes.dateTime}>{parseTimestampToReadable(data.createdAt)}</Text>
                 </Flex>
                 <Text>

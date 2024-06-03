@@ -42,6 +42,7 @@ git clone https://github.com/diontristen/tsismis-fe
 2. Install dependencies:
 
 ```
+cd tsismis-fe
 npm install
 ```
 3. Create an .env file to your root directory
@@ -54,6 +55,18 @@ VITE_APP_API=http://localhost:5001
 
 ```
 npm run dev
+```
+
+If we are using a windows and linux and encountered this issue
+```
+Error: Cannot find module @rollup/rollup-linux-x64-gnu. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+```
+You would need to remove `package-lock.json` as I initially built this in a mac OS m1 machine
+```
+rm -rf node_modules
+rm -rf package-lock.json
+
+npm install
 ```
 
 

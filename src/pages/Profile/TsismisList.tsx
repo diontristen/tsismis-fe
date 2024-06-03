@@ -37,10 +37,9 @@ const TsismisList = () => {
                 scrollableTarget="home"
             >
 
-                {tsismisList && tsismisList.map((tsismis, index) => (
+                {tsismisList && tsismisList.map((tsismis) => (
                     <Tsismis
                         key={tsismis.id}
-                        index={index}
                         data={tsismis}
                         own={tsismis.user.id === user?.id}
                     />
