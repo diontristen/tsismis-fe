@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       tsConfigPaths()
     ],
     define: {
-      'process.env': JSON.stringify(process.env)
+      'process.env':process.env
     },
     server: {
       proxy: {
@@ -22,5 +22,13 @@ export default defineConfig(({ mode }) => {
       },
       port:  Number(env.VITE_PORT) || 3000,
     },
+     build: {
+    outDir: 'build',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    commonjsOptions: {
+      include: [/node_modules/]
+    }
+  },
   }
 })
