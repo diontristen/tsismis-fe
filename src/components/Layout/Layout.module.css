@@ -27,6 +27,7 @@
     border-left: 1px solid var(--mantine-color-body-border);
     border-right:1px solid var(--mantine-color-body-border);
     overflow: auto;
+    padding-bottom: 32px;
     @media (max-width: $mantine-breakpoint-lg) {
         flex: 1;
     }
